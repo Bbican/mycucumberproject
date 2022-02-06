@@ -1,11 +1,4 @@
-#User Story Name: Customer money transfer
-#Description : As customer, I should be able to make money transfer between my accounts at no cost
-#Acceptance Criteria:(IMPORTANT. TESTING IS DONE BASE ON THIS CRITERIA)
-#Given user is on the application
-#And navigates to transfer money page
-#And verify money transfer between the accounts are successful
-#Success Message: Transfer is successful
-@money_transfer
+@money_transfer @smoke
 Feature: money transfer feature
 
   Scenario Outline: login_with_customer_credentials
@@ -32,3 +25,4 @@ Feature: money transfer feature
     And user types the description
     Then user makes the money transfer and verify success message
     Then close the application
+
